@@ -1,12 +1,14 @@
 var questionnum = 1
 var navq2 = false
 var navq3 = false
+var navq4 = false
 
 document.getElementById("Question2").style.display = "none"
 document.getElementById("Question3").style.display = "none"
 document.getElementById("Question4").style.display = "none"
 document.getElementById("navprev").disabled = true
 document.getElementById("navnext").disabled = true
+document.getElementById("submitbutton").disabled = true;
 
 document.getElementById("1answer1").addEventListener("click", function() {
     document.getElementById("navnext").disabled = false
@@ -55,6 +57,39 @@ document.getElementById("3answer4").addEventListener("click", function() {
     navq3 = true
 });
 
+document.getElementById("4answer1").addEventListener("click", function() {
+    navq4 = true
+    
+    if(navq2 && navq3 && navq4)
+    {
+        document.getElementById("submitbutton").disabled = false
+    }
+});
+document.getElementById("4answer2").addEventListener("click", function() {
+    navq4 = true
+
+    if(navq2 && navq3 && navq4)
+    {
+        document.getElementById("submitbutton").disabled = false
+    }
+});
+document.getElementById("4answer3").addEventListener("click", function() {
+    navq4 = true
+
+    if(navq2 && navq3 && navq4)
+    {
+        document.getElementById("submitbutton").disabled = false
+    }
+});
+document.getElementById("4answer4").addEventListener("click", function() {
+    navq4 = true
+
+    if(navq2 && navq3 && navq4)
+    {
+        document.getElementById("submitbutton").disabled = false
+    }
+});
+
 
 document.getElementById("navnext").addEventListener("click", function() {
     if(questionnum == 1)
@@ -91,8 +126,6 @@ document.getElementById("navnext").addEventListener("click", function() {
     {
         questionnum += 1
     }
-
-    //document.getElementById("navnext").disabled = true
 });
 
 document.getElementById("navprev").addEventListener("click", function() {
@@ -123,4 +156,8 @@ document.getElementById("navprev").addEventListener("click", function() {
     }
     document.getElementById("navnext").disabled = false
     
+});
+
+document.getElementById("submitbutton").addEventListener("click", function() {
+
 });
