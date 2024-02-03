@@ -1,6 +1,11 @@
+body {
+    background-color:lightgray;
+}
+
 .Title {
     font-size: 40x;
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .q1 {
@@ -48,5 +53,6 @@
 }
 
 .feedback {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
 }
