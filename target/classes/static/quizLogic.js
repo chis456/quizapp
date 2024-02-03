@@ -97,7 +97,7 @@ document.getElementById("navnext").addEventListener("click", function() {
     {
         document.getElementById("navprev").disabled = false
         document.getElementById("Question1").style.display = "none"
-        document.getElementById("Question2").style.display = "inline"
+        document.getElementById("Question2").style.display = "block"
 
         if(navq2 == false)
         {
@@ -108,7 +108,7 @@ document.getElementById("navnext").addEventListener("click", function() {
     else if(questionnum == 2)
     {
         document.getElementById("Question2").style.display = "none"
-        document.getElementById("Question3").style.display = "inline"
+        document.getElementById("Question3").style.display = "block"
 
         if(navq3 == false)
         {
@@ -119,7 +119,7 @@ document.getElementById("navnext").addEventListener("click", function() {
     else if(questionnum == 3)
     {
         document.getElementById("Question3").style.display = "none"
-        document.getElementById("Question4").style.display = "inline"
+        document.getElementById("Question4").style.display = "block"
         document.getElementById("navnext").disabled = true
     }
 
@@ -134,20 +134,20 @@ document.getElementById("navprev").addEventListener("click", function() {
     if(questionnum == 4)
     {
         document.getElementById("Question4").style.display = "none"
-        document.getElementById("Question3").style.display = "inline"
+        document.getElementById("Question3").style.display = "block"
         document.getElementById("navnext").disabled = false
     }
 
     if(questionnum == 3)
     {
         document.getElementById("Question3").style.display = "none"
-        document.getElementById("Question2").style.display = "inline"
+        document.getElementById("Question2").style.display = "block"
     }
 
     if(questionnum == 2)
     {
         document.getElementById("Question2").style.display = "none"
-        document.getElementById("Question1").style.display = "inline"
+        document.getElementById("Question1").style.display = "block"
         document.getElementById("navprev").disabled = true
     }
     
@@ -183,13 +183,13 @@ document.getElementById("submitbutton").addEventListener("click", function() {
 
     console.log(numcorrect + "/4")
 
-    document.getElementById("result").style.display = "inline"
+    document.getElementById("result").style.display = "block"
     document.getElementById("result").textContent="Your Score: " + numcorrect + " / 4";
 
-    document.getElementById("feedbackq1").style.display = "inline"
-    document.getElementById("feedbackq2").style.display = "inline"
-    document.getElementById("feedbackq3").style.display = "inline"
-    document.getElementById("feedbackq4").style.display = "inline"
+    document.getElementById("feedbackq1").style.display = "block"
+    document.getElementById("feedbackq2").style.display = "block"
+    document.getElementById("feedbackq3").style.display = "block"
+    document.getElementById("feedbackq4").style.display = "block"
 
     document.getElementById("feedbackq1").textContent = "Question 1, answer: 276, your answer: " + document.querySelector('input[name="answerq1"]:checked').value
     document.getElementById("feedbackq2").textContent = "Question 2, answer: Feb 3rd, your answer: " + document.querySelector('input[name="answerq2"]:checked').value

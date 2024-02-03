@@ -1,3 +1,52 @@
 .Title {
     font-size: 40x;
+    text-align: center;
+}
+
+.q1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.q2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.q3 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.q4 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.Navigation {
+    text-align: center;
+}
+
+.Submission {
+    text-align: center;
+}
+
+.nextbutton {
+    width: 150px;
+}
+
+.beforebutton {
+    width: 150px;
+}
+
+.Results {
+    text-align: center;
+}
+
+.score {
+    color: green;
+}
+
+.feedback {
+    font-size: 30px;
 }
